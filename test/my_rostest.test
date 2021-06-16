@@ -1,0 +1,7 @@
+<launch>
+  <arg name="sleep_time" default="10" />
+
+  <test test-name="my_rostest" pkg="multi_test_pkg" type="my_rostest.py">
+    <param name="sleep_time" value="$(arg sleep_time)" />
+  </test>
+</launch>
